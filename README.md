@@ -8,6 +8,8 @@
 
 ## **Description**
 
+I initially wrote this program for a final project in a UNIX systems programming course taught by [Dr. Purushotham Bangalore](https://sites.uab.edu/puri/) at [UAB](https://www.uab.edu/) , and then I polished it.
+
 This program is a simple job scheduler written in C that executes a specified number of non-interactive, background-compatible jobs concurrently, redirecting the output and error streams of each job to `<jobID>.out` and `<jobID>.err`, respectively.
 
 ### **Features**
