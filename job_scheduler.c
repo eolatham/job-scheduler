@@ -133,9 +133,7 @@ void *complete_jobs(void *arg)
     return NULL;
 }
 
-/*
-Complete the job pointed to by arg using fork/exec.
-*/
+/* Complete the job pointed to by arg using fork/exec. */
 void *complete_job(void *arg)
 {
     job *jp;     /* job pointer from arg */

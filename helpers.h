@@ -27,14 +27,17 @@ typedef struct queue
     int count;    /* number of elements in the queue */
 } queue;
 
+/* job functions */
 job create_job(char *cmd, int jid);
 void list_jobs(job *jobs, int n, char *mode);
 
+/* queue functions */
 queue *queue_init(int n);
 int queue_insert(queue *q, job *jp);
 job *queue_delete(queue *q);
 void queue_destroy(queue *q);
 
+/* I/O functions and other helpers */
 int get_line(char *s, int n);
 int is_space(char c);
 char *left_strip(char *s);

@@ -8,7 +8,7 @@
 
 ## **Description**
 
-This program is a simple job scheduler that executes a specified number of non-interactive, background-compatible jobs concurrently, redirecting the output and error streams of each job to `<jobID>.out` and `<jobID>.err`, respectively.
+This program is a simple job scheduler written in C that executes a specified number of non-interactive, background-compatible jobs concurrently, redirecting the output and error streams of each job to `<jobID>.out` and `<jobID>.err`, respectively.
 
 ### **Features**
 
