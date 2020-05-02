@@ -1,3 +1,8 @@
+/*
+Author: Eric Latham
+Email: ericoliverlatham@gmail.com
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -87,9 +92,8 @@ queue *queue_init(int n)
 }
 
 /*
-Insert the job pointer jp into the queue q, update the
-pointers and count, and return the number of items
-in the queue (-1 if q is null or full).
+Insert the job pointer jp into the queue q, update the pointers and count,
+and return the number of items in the queue (-1 if q is null or full).
 Adapted from Professor Bangalore's queue example.
 */
 int queue_insert(queue *q, job *jp)
@@ -105,9 +109,8 @@ int queue_insert(queue *q, job *jp)
 }
 
 /*
-Delete a job pointer from the queue, update the
-pointers and count, and return the job pointer
-deleted (-1 if q is null or empty).
+Delete a job pointer from the queue, update the pointers and count,
+and return the job pointer deleted (-1 if q is null or empty).
 Adapted from Professor Bangalore's queue example.
 */
 job *queue_delete(queue *q)
@@ -151,9 +154,7 @@ int get_line(char *s, int n)
     return i;
 }
 
-/*
-Return 1 if c is a whitespace character and 0 otherwise.
-*/
+/* Return 1 if c is a whitespace character and 0 otherwise. */
 int is_space(char c)
 {
     return (c == ' ' ||
@@ -164,9 +165,7 @@ int is_space(char c)
             c == '\x0c');
 }
 
-/*
-Return a pointer to the first non-whitespace character in s.
-*/
+/* Return a pointer to the first non-whitespace character in s. */
 char *left_strip(char *s)
 {
     int i;
@@ -178,10 +177,7 @@ char *left_strip(char *s)
     return s + i;
 }
 
-/*
-Return a null-terminated copy of
-the null-terminated string s.
-*/
+/* Return a null-terminated copy of the null-terminated string s. */
 char *get_copy(char *s)
 {
     int i, c;
@@ -229,7 +225,6 @@ char *current_datetime_str()
 /*
 Parse space/tab separated tokens in order from the given string
 into a null-terminated array of strings and return it.
-I used my submission for Project #1 as a guide for this.
 */
 char **get_args(char *line)
 {
@@ -250,10 +245,7 @@ char **get_args(char *line)
     return args;
 }
 
-/*
-Open a log file with the given filename and
-return its file descriptor.
-*/
+/* Open a log file with the given filename and return its file descriptor. */
 int open_log(char *fn)
 {
     int fd;

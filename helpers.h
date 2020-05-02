@@ -1,3 +1,8 @@
+/*
+Author: Eric Latham
+Email: ericoliverlatham@gmail.com
+*/
+
 #include <pthread.h>
 
 typedef struct job

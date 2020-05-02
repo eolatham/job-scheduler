@@ -1,10 +1,8 @@
-# **CS-332 Project #4**
+# **Job Scheduler**
 
 #### Author: Eric Latham
 
-#### Email: eolatham@uab.edu
-
-#### Date: April 10, 2020
+#### Email: ericoliverlatham@gmail.com
 
 ---
 
