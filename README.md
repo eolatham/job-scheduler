@@ -1,4 +1,4 @@
-# **Job Scheduler**
+# Job Scheduler
 
 #### Author: Eric Latham
 
@@ -6,19 +6,19 @@
 
 ---
 
-## **Description**
+## Description
 
 I initially wrote this program for a final project in a UNIX systems programming course taught by [Dr. Purushotham Bangalore](https://www.uab.edu/cas/computerscience/people/faculty-directory/purushotham-v-bangalore) at [UAB](https://www.uab.edu/) , and then I polished it.
 
 This program is a simple job scheduler written in C that executes a specified number of non-interactive, background-compatible jobs concurrently, redirecting the output and error streams of each job to `<jobID>.out` and `<jobID>.err`, respectively.
 
-### **Features**
+### Features
 
 - User input is handled flexibly with respect to whitespace.
 
 - The main program error stream is redirected to `<executable>.err` to avoid interrupting user input.
 
-### **Algorithm**
+### Algorithm
 
 Divide the main program tasks into threads and execute jobs in new processes.
 
@@ -44,23 +44,23 @@ Execute waiting jobs concurrently.
   - wait a second before next iteration
 ```
 
-## **Instructions**
+## Instructions
 
-### **To Compile**
+### To Compile
 
 Use any of the following commands:
 
 - `make`
 - `gcc -Wall -lpthread -o job_scheduler job_scheduler.c helpers.c`
 
-### **To Run**
+### To Run
 
 Use the following command:
 
 - `./job_scheduler CONCURRENCY`
   - `CONCURRENCY` is an integer clipped to the range `[1, 8]`
 
-### **Commands**
+### Commands
 
 - `submit COMMAND [ARGS]`
   - Add a job with the specified command and arguments to the job queue to be started as soon as possible and print the job's job ID to `stdout`.
